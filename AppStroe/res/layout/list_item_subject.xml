@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rixin="http://schemas.android.com/apk/res/com.rixin.appstore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/list_item_bg_selector"
+        android:orientation="vertical" >
+
+        <com.rixin.appstore.ui.view.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            rixin:ratio="2.43" >
+
+            <ImageView
+                android:id="@+id/iv_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/subject_default" />
+        </com.rixin.appstore.ui.view.RatioLayout>
+
+        <TextView
+            android:id="@+id/tv_subject_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#233"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
